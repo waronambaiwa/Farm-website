@@ -1,0 +1,198 @@
+body{
+   font-family: Arial,sans-serif;
+   margin: 0;
+   padding: 10px;
+   background-color:white;
+   color: black;
+} 
+header{
+    background-color: green;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+}
+nav{
+    margin-top: 10px;
+}
+nav a{
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+/* main layout (applies to all content area)*/
+main{
+    padding: 20px;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10 rgba(0 ,0 ,0 ,0.1);
+}
+/* headings*/
+h2,h3{
+    color: #4CAF50;
+    margin-top: 10px;
+    border: 1px solid white;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color:white;
+    box-shadow: 0 0 10px rgba(0 ,0 ,0 ,0.1);   
+}
+table,th,td{border: 1px solid white;
+
+}
+th{
+    background: color #e8f5e9;
+    padding: 12px;
+    text-align: left;
+}
+ td{
+    padding: 10px;
+    text-align:left ;
+ } 
+ img{
+    max-width:100px;
+    border-radius: 8px;
+ } 
+ .animal-card{
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #f9fff9;
+    box-shadow: 0 0 8px rgba(0 ,0 ,0 ,0.5);
+ } 
+ .animal-card img{
+     max-width: 150px;
+     display: block;
+     margin-bottom: 10px;
+ }
+ footer{
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    background-color: green;
+ }
+ul{
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+/*tablets*/
+ @media screen  and (max-width:768px){ 
+   body {
+    font-size:16px;
+  } 
+  table{
+    font-size: 15px;
+  }
+  img{
+    max-width: 90px;
+  }
+  th,td{
+    padding: 8px;
+  }
+ }
+ /*smartphone*/
+ @media(max-width: 480px){
+    table,thead,tbody,th,td,tr{
+        display: block;
+    }
+    thead{
+        display: none;
+    }
+    td{
+        border:none;
+        padding: 10px 10px 10px 50px;
+        position: relative;
+        text-align: left;
+    }
+    td::before{
+        content:attr(data-label);
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    img{
+        max-width: 80px;
+    }
+ }
+#testimonials {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+#testimonials h2, #testimonials h3 {
+  color: #333;
+  text-align: center;
+}
+
+.testimonial {
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-left: 5px solid #4CAF50;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+.testimonial p {
+  font-style: italic;
+  color: #555;
+}
+
+.testimonial h4 {
+  margin-top: 10px;
+  color: #222;
+}
+
+/* Form Styling */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.banner-container img{
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: flex-box;
+  margin-top: 10px;
+}
+
+header h1 {
+  text-align: left;
+  margin-left: 20px;
+}
